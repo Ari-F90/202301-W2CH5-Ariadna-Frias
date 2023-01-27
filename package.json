@@ -1,0 +1,15 @@
+{
+  "name": "202301w2ch5-ariadna-frias",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "challenge",
+    "weekend"
+  ],
+  "author": "Ariadna Frias",
+  "license": "ISC"
+}
