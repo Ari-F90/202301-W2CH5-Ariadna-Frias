@@ -1,4 +1,4 @@
-import { createArea } from "./tools.js";
+import { createArea } from "./createArea.js";
 describe("Given a function createArea", () => {
   describe("When we have two parameters for rows and columns", () => {
     test("Then if we define 3 rows and 3 columns,it should appear nine random numbers", () => {
