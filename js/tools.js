@@ -1,5 +1,3 @@
-let state = 1;
-
 export const createArea = (rows, cols) => {
   const area = [];
   let count = 0;
