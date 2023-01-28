@@ -4,7 +4,7 @@ describe("Given a function createArea", () => {
     test("Then if we define 3 rows and 3 columns,it should appear nine random numbers", () => {
       const rows = 3;
       const cols = 3;
-      const expected = console.table(createArea(rows,cols);
+      const expected = 9;
       const r = createArea(rows, cols);
       expect(r).toBe(expected);
     });
