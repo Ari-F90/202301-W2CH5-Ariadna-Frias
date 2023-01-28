@@ -15,3 +15,10 @@ export const createArea = (rows, cols) => {
   console.table(area);
   return count;
 };
+
+/*export const cellAside = () => {
+  if ([i - 1] === -1 || [j - 1] === -1 || [i + 1] === 3 || [j + 1] === 3) {
+    cellAside();
+  }
+  if [i][j] === 0
+};*/
