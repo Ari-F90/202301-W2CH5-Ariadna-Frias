@@ -16,9 +16,30 @@ export const createArea = (rows, cols) => {
   return count;
 };
 
-/*export const cellAside = () => {
-  if ([i - 1] === -1 || [j - 1] === -1 || [i + 1] === 3 || [j + 1] === 3) {
-    cellAside();
+export const countCellsAlive = (rows, cols, area) => {
+  const rows = i;
+  const cols = j;
+  let cell = area[i][j];
+  let cellsNextTo = [
+    area[i][j - 1],
+    area[i - 1][j - 1],
+    area[i - 1][j],
+    area[i - 1][j + 1],
+    area[i][j + 1],
+    area[i + 1][j + 1],
+    area[i + 1][j],
+    area[i + 1][j - 1],
+  ];
+  let cells = 0;
+  for (let i = 0; i < rows; i++) {
+    for (let j = 0; j < cols; j++) {
+      if (cellsNextTo.some((el) => el === 1)) {
+        cells++;
+        return true;
+      }
+      if ([i - 1] === 0 || [j - 1] === 0 || [i + 1] === 4 || [j + 1] === 4) {
+        return false;
+      }
+    }
   }
-  if [i][j] === 0
-};*/
+};

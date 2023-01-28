@@ -7,6 +7,8 @@ Game of life demo
 
 Un resumen de las reglas:
 
+En Javascript, las células muertas están representadas con 0 y las células vivas con un 1.
+
 Una célula viva sigue las siguientes reglas:
 
 - Si tiene menos de 2 células contiguas vivas, muere por "soledad".
