@@ -1,24 +1,31 @@
-import { createArea } from "./createArea.js";
+const area = [
+  [1, 0, 0, 1],
+  [0, 0, 1, 0],
+  [0, 0, 1, 1],
+];
 
 export const countCellsAlive = (rows, cols, area) => {
-  const i = rows;
-  const j = cols;
-  const cellsNextTo = [
-    area[i][j - 1],
-    area[i - 1][j - 1],
-    area[i - 1][j],
-    area[i - 1][j + 1],
-    area[i][j + 1],
-    area[i + 1][j + 1],
-    area[i + 1][j],
-    area[i + 1][j - 1],
-  ];
   let cells = 0;
-  if (cellsNextTo.some((el) => el === 1)) {
-    cells++;
+  const nextTo = area;
+
+  for (let i = 0; i < rows - 1; i++) {
+    for (let j = 0; j < cols - 1; j++) {
+      if (i === 0 || i === rows - 1 || j === 0 || j === cols - 1) {
+        nextTo[i][j] = area[i][j];
+      }
+
+      cells += area[i - 1][j - 1];
+      cells += area[i - 1][j];
+      cells += area[i - 1][j + 1];
+      cells += area[i][j - 1];
+      cells += area[i][j + 1];
+      cells += area[i + 1][j - 1];
+      cells += area[i + 1][j];
+      cells += area[i + 1][j + 1];
+    }
   }
 
   return cells;
 };
 
-countCellsAlive(3, 3, createArea(3, 3));
+countCellsAlive(4, 4, area);
