@@ -15,4 +15,4 @@ export const createArea = (rows, cols) => {
   return area;
 };
 
-const createAr = createArea(3, 3);
+createArea(3, 3);

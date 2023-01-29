@@ -11,5 +11,3 @@ describe("Given a function createArea", () => {
     });
   });
 });
-
-createArea(3, 3);
