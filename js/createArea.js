@@ -14,5 +14,3 @@ export const createArea = (rows, cols) => {
   console.table(area);
   return area;
 };
-
-createArea(3, 3);
