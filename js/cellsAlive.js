@@ -13,6 +13,5 @@ export const countCellsAlive = (rows, cols, area) => {
     }
   }
 
-  console.log(cells);
   return cells;
 };
