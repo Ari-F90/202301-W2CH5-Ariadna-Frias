@@ -1,5 +1,4 @@
-import { countCellsAlive } from "./cellsAlive.js";
-import { createArr } from "./cellsAlive.js";
+import { countCellsAlive, createArr } from "./cellsAlive.js";
 
 export const checkStatus = (rows, cols, area) => {
   for (let i = 0; i < rows; i++) {
