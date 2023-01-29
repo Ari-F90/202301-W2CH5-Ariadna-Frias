@@ -1,9 +1,5 @@
-const area = [
-  [1, 0, 0, 1],
-  [0, 0, 1, 0],
-  [0, 0, 1, 1],
-];
-
+import { createArea } from "./createArea.js";
+const createArr = createArea(3, 3);
 export const countCellsAlive = (rows, cols, area) => {
   let cells = 0;
   const nextTo = area;
@@ -28,4 +24,4 @@ export const countCellsAlive = (rows, cols, area) => {
   return cells;
 };
 
-countCellsAlive(4, 4, area);
+countCellsAlive(4, 4, createArr);
